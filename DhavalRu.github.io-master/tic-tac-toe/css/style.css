@@ -1,0 +1,53 @@
+body {
+  margin: 2% auto auto auto;
+  background-color: #40D0C0;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+input[type="radio"] {
+  padding: 20px;
+  margin-top: 13px;
+}
+
+label span {
+  font-size: 200%;
+  padding: 10px;
+}
+
+.btn {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1%;
+  margin-right: 0.5%;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+p {
+  height: 40px;
+}
+
+@media (max-width: 750px) {
+  .btn {
+    width: 70px;
+    height: 70px;
+  }
+}
+#winner {
+  font-size: 200%;
+  color: #d04050;
+}
+
+footer {
+  margin-top: 1%;
+  font-size: 150%;
+}
+footer a, footer a:hover, footer a:focus, footer a:visited, footer a:link, footer a:active {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

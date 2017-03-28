@@ -1,0 +1,39 @@
+body {
+  margin: 2% auto auto auto;
+  background-color: white;
+  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 80%;
+  }
+}
+p {
+  font-size: 150%;
+}
+
+h1 {
+  background-color: #9fc4e4;
+  margin-bottom: 3%;
+  opacity: 0.5;
+  padding: 2% 4%;
+}
+
+.btn {
+  margin-bottom: 2%;
+}
+
+a {
+  color: black;
+  font-size: 130%;
+}
+
+footer {
+  background-color: #9fc4e4;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */

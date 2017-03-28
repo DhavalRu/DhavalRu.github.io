@@ -1,0 +1,116 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+$calcBackground: #1B1B1B;
+
+@mixin box-shadow($valh, $valv, $valblur, $valspread, $col) {
+  -webkit-box-shadow: $valh $valv $valblur $valspread $col;
+  box-shadow: $valh $valv $valblur $valspread $col;
+}
+
+body {
+  margin: 2% auto auto auto;
+  background-color: #675FFF;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 0;
+  color: white;
+}
+
+#calc {
+  width: 300px;
+  height: 520px;
+  margin: 1% auto;
+  background-color: $calcBackground;
+  border-radius: 4%;
+  padding: 10px 20px;
+  @include box-shadow(5px, 5px, 5px, 5px, #260F14);
+}
+
+@media (max-width: 400px) {
+  #containerID {
+    padding: 0;
+  }
+  #calc {
+    margin: 0;
+  }
+}
+
+.btn {
+  width: 61px;
+  height: 60px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 150%;
+  @include box-shadow(1px, 2px, 2px, 2px, gray);
+  &:active, &:visited {
+    box-shadow: none;
+  }
+}
+
+.btn-danger {
+  @include box-shadow(1px, 2px, 2px, 2px, #d9534f);
+}
+
+.btn-primary {
+  @include box-shadow(1px, 2px, 2px, 2px, #337ab7);
+}
+
+#equals {
+  position: absolute;
+  height: 125px;
+  margin-left: 4px;
+}
+
+/* Fix Chrome equals button position */
+@media (-webkit-min-device-pixel-ratio:0) {
+  #equals {
+    margin-left: 0px;
+  }
+}
+
+/* Fix IE 8, 9, 10 equals button position */
+@media screen\0 {
+  #equals {
+    margin-left: 194px;
+    margin-top: -65px;
+  }
+}
+
+#zero {
+  width: 125px;
+}
+
+#resultdiv {
+  background-color: lighten(#1B1B1B, 30%);
+  border: 1px solid black;
+  margin-bottom: 3%;
+  font-family: 'Oswald', sans-serif;
+  -webkit-box-shadow: 3px 3px 4px 1px #1a1a1a inset;
+  box-shadow: 3px 3px 4px 1px #1a1a1a inset;
+}
+
+#result {
+  font-size: 180%;
+  padding: 10px 6px;
+  overflow: auto;
+  margin-bottom: 0;
+  color: black;
+}
+
+#log {
+  font-size: 120%;
+  padding: 5px 6px;
+  overflow: auto;
+}
+
+footer {
+  margin-top: 4%;
+  font-size: 150%;
+  color: black;
+
+  a, a:hover, a:focus, a:visited, a:link, a:active {
+    color: black;
+    outline: 0;
+  }
+}

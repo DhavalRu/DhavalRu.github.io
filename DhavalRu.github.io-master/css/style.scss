@@ -1,0 +1,94 @@
+.container-fluid, .row {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size:300%;
+}
+
+.welcome {
+  background-color: #009838;
+  font-size: 150%;
+  min-height: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa {
+  color: white;
+  cursor: default;
+}
+
+.fa:hover {
+  color: black;
+}
+
+.fa-chevron-circle-down {
+  margin: 4% auto;
+}
+
+.projects {
+  background-color: #19181B;
+  color: #00FFF1;
+  margin: auto;
+  padding-bottom: 2%;
+}
+
+.contact {
+  background-color: #D3D3D3;
+  margin: auto;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.contact a {
+  font-size: 150%;
+  text-decoration: underline;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h2 {
+  margin: 0;
+  padding: 2%
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+  padding: 1% 0 10% 0;
+  font-size: 130%;
+}
+
+.figcaptionclass {
+  font-size: 120%;
+  color: #009838;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #009838;
+}
+
+footer {
+  background-color: #009838;
+  color: white;
+  padding: 2%;
+  font-size: 150%;
+}
+
+img {
+  width: 100%;
+}
+
+.techUsed {
+  font-weight: bold;
+}
