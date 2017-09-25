@@ -1,11 +1,10 @@
-import { EventEmitter, Injectable } from "@angular/core";
-import { Recipe } from "./recipe.model";
-import { Ingredient } from "../shared/ingredient.model";
-import { ShoppingListService } from "../shopping-list/shopping-list.servive";
+import { Injectable } from '@angular/core';
+import { Recipe } from './recipe.model';
+import { Ingredient } from '../shared/ingredient.model';
+import { ShoppingListService } from '../shopping-list/shopping-list.servive';
 
 @Injectable()
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
 
     private recipes: Recipe[] = [
         new Recipe('A test recipe 1', 
@@ -23,15 +22,19 @@ export class RecipeService {
             new Ingredient('Meat', 2)
         ])
     ];
-    
+
     constructor(private slService: ShoppingListService) {}
 
     getRecipes() {
         return this.recipes.slice();
     }
 
+    getRecipe(index: number) {
+        return this.recipes[index];
+    }
+
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
         this.slService.addIngredients(ingredients);
-        //TODO: If I keep clicking add to shopping list, it will keep adding duplicates...fix this
+        // TODO: If I keep clicking add to shopping list, it will keep adding duplicates...fix this
     }
 }

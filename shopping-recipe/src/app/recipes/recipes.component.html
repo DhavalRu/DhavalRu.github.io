@@ -3,13 +3,6 @@
 		<app-recipe-list></app-recipe-list>
 	</div>
 	<div class="col-md-7">
-		<!-- If selectedRecipe is set, display the recipe, and set the recipe property in recipe-detail to selectedRecipe -->
-		<app-recipe-detail 
-		*ngIf="selectedRecipe; else infoText"
-		[recipe]="selectedRecipe"></app-recipe-detail>
-		<!--Local reference (Reference an HTML element locally in the template) #infoText -->
-		<ng-template #infoText> 
-			<p>Please select a Recipe!</p>
-		</ng-template>
+		<router-outlet></router-outlet>
 	</div>
 </div>
