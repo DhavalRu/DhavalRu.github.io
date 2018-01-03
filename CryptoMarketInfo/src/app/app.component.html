@@ -1,1 +1,18 @@
-<h1 *ngFor="let coin of cmc">{{ coin.name }}</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <section style="margin: 10px; text-align: center;" class="col-lg-2" *ngFor="let coin of cmc.slice(0,5)">
+            {{ coin.name }}
+        </section>
+    </div>
+    <div class="row justify-content-center">
+        <section style="margin: 10px; text-align: center;" class="col-lg-2" *ngFor="let coin of cmc.slice(5,10)">
+            {{ coin.name }}
+        </section>
+    </div>
+</div>
+
+<!--<section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+    <img class="icon" src="images/icon.svg" alt="Icon">
+    <h3>Coin/h3>
+    <p>Description</p>
+  </section>-->
