@@ -1,0 +1,15 @@
+div.container {
+    color: white;
+}
+
+section {
+    border: 1px solid white;
+    word-wrap: break-word;
+    a, a:hover, a:focus, a:visited, a:link, a:active {
+        color: white;
+        text-decoration: none;
+    }
+}
+section:hover {
+    border: 1px solid blue;
+}

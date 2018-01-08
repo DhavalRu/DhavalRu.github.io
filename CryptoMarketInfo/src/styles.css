@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@media (min-height:728px) {
+    html, body {
+        height: 100%;
+    }
+}
+
 body {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+67 */
 background: #575857; /* Old browsers */

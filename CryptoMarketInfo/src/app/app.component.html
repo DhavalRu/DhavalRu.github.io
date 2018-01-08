@@ -1,29 +1,3 @@
-<div class="container d-flex flex-column justify-content-center h-100 align-items-center">
-    <h1 class="text-center mb-5">Top 10 Cryptocurrencies by Market Cap</h1>
-    <div class="row justify-content-center">
-        <section style="text-align: center;" class="m-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" *ngFor="let coin of cmc.slice(0,5)">
-            <h3>{{ coin.name }}</h3>
-            <!--<p>{{ coin.rank }}</p>-->
-            <p>Price: {{ coin.price_usd | currency:'USD' }}</p>
-            <p>Market Cap: {{ coin.market_cap | currency:'USD' }}</p>
-            <p>Change (24h): {{ coin.change_day }}%</p>
-        </section>
-    </div>
-    <div class="row justify-content-center">
-        <section style="text-align: center;" class="m-2 col-lg-2 col-md-2 col-sm-6 col-xs-6" *ngFor="let coin of cmc.slice(5,10)">
-            <h3>{{ coin.name }}</h3>
-            <!--<p>{{ coin.rank }}</p>-->
-            <p>Price: {{ coin.price_usd | currency:'USD' }}</p>
-            <p>Market Cap: {{ coin.market_cap | currency:'USD' }}</p>
-            <p>Change (24h): {{ coin.change_day }}%</p>
-        </section>
-    </div>
+<div class="container d-flex flex-column justify-content-center align-items-center h-100">
+    <router-outlet></router-outlet>
 </div>
-
-<!-- Other API's
-    https://www.kraken.com/en-us/help/api
-    https://docs.bitfinex.com/docs
-    https://github.com/binance-exchange/binance-official-api-docs
-    https://developers.coinbase.com/
-    https://docs.gdax.com/#introduction
--->

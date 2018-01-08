@@ -1,0 +1,25 @@
+<div class="container d-flex flex-column justify-content-center align-items-center h-100">
+    <h1 class="text-center mb-5">Top 10 Cryptocurrencies by Market Cap</h1>
+    <div class="row justify-content-center">
+        <section style="text-align: center;" class="m-2 col-lg-2 col-md-2 col-sm-12 col-xs-12" *ngFor="let coin of cmc.slice(0,5)">
+            <a style="cursor: pointer;" [routerLink]="[coin.name]">
+                <h3>{{ coin.name }}</h3>
+                <!--<p>{{ coin.rank }}</p>-->
+                <p>Price: {{ coin.price_usd | currency:'USD' }}</p>
+                <p>Market Cap: {{ coin.market_cap | currency:'USD' }}</p>
+                <p>Change (24h): {{ coin.change_day }}%</p>
+            </a>
+        </section>
+    </div>
+    <div class="row justify-content-center">
+        <section style="text-align: center;" class="m-2 col-lg-2 col-md-2 col-sm-12 col-xs-12" *ngFor="let coin of cmc.slice(5,10)">
+            <a style="cursor: pointer;" [routerLink]="[coin.name]">
+                <h3>{{ coin.name }}</h3>
+                <!--<p>{{ coin.rank }}</p>-->
+                <p>Price: {{ coin.price_usd | currency:'USD' }}</p>
+                <p>Market Cap: {{ coin.market_cap | currency:'USD' }}</p>
+                <p>Change (24h): {{ coin.change_day }}%</p>
+            </a>
+        </section>
+    </div>
+</div>
