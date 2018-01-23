@@ -11,11 +11,7 @@ export class HomeComponent implements OnInit {
 
   public cmc: CmcModel[];
   constructor(public cmcService: CmcHttpService) {
-    this.cmc = this.cmcService.cmc;
-/*     if (this.cmc.length === 0) {
-      this.cmcService.saveData();
-      this.cmc = this.cmcService.cmc;
-    } */
+    this.cmcService.cmc$.subscribe((cmc: CmcModel[]) => { this.cmc = cmc; } );
   }
 
   ngOnInit() {
